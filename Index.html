@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- font-awosome-link -->
+  <script src="https://kit.fontawesome.com/9eb15fda7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav id="mynav" class="navbar fixed-top navbar-expand-lg navbar-dark navbar-fixed-top nav-fixed" style="border-bottom: 5px solid white;">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-5 text-danger fw-bold fs-3" href="#"><span class="fs-1 text-dark">E-</span> Flexoo</a>
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feature">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#joint-us">JOINT CONFERENCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#our-team">OUR SPEAKER'S</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">NEWS</a>
+          </li>
+        </ul>
+        <button class="me-5 bttn rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal" >CONTACT US </button>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade login-form" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <form action="action_page.php" style="border:1px solid #ccc">
+                <div class="container">
+                  <label for="email"><b>Email:</b></label><br>
+                  <input type="text" placeholder="Enter your Email" name="email" required><br>
+                  <label for="psw"><b>Password:</b></label><br>
+                  <input type="password" placeholder="Enter Password" name="psw" required><br>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px; width: 20px;"> Remember me
+                  </label><br>
+                  <button class="bttn w-100">Login</button>
+                  </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="bttn" data-bs-dismiss="modal">Cancel</button>
+         <p>Forget <a href="">Password?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header>
+    <!-- carousel-start -->   
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carousel-1.jpg" style="height: 100vh; object-fit: cover;" class=" d-block w-100 " alt="...">
+          <div class="overlay"></div>
+          <div class="carousel-caption carousel-png d-none d-md-block mb-3">
+            <div class="text">
+              <h5 class="display-3 fw-bold">Wellcome Dear!</h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carousel-2.jpg" style="height: 100vh; object-fit: cover;" class="d-block w-100" alt="...">
+          <div class="overlay"></div>
+          <div class="carousel-caption carousel-png d-none d-md-block mb-3">
+            <div class="text">
+              <h5 class="display-3 fw-bold">Where Are You!</h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carousel-3.jpg" style="height: 100vh; object-fit: cover;" class="d-block w-100" alt="...">
+          <div class="overlay"></div>
+          <div class="carousel-caption carousel-png d-none d-md-block mb-3">
+            <div class="text">
+              <h5 class="display-3 fw-bold">let's Start With Us!</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel-end -->
+  </header>
+  <!-- about-section-start -->
+  <section id="about" class="aboutsection" style="margin-top: 200px;">
+    <div class="container mt-5 p-">
+      <div class="row ">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-12">
+          <div class="about-content">
+            <h2 class="text-danger fw-bold h1">About Us</h2>
+            <div class="display-5 fw-bold lh-1 mb-2">Let's Take The Next Step With You</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, sed voluptates? let's Start today With us
+              and Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci a rerum ab consectetur
+              facere, minus maxime cumque nulla magnam reprehenderit nam, deserunt est, veritatis laborum autem eaque
+              sunt? Saepe velit sapiente minus?</p>
+            <button class="bttn rounded-pill px-5 py-2">Let's Start</button>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-12">
+          <div class="img">
+            <img class="img img-thumbnail img-fluid"
+              src="./img/tinywow_pexels-henri-mathieusaintlaurent-8348463_10881403.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center text-light p-3" style="background-color: black; margin-bottom: 200px;">
+      <h1>Let's Build Your Future <span style="color: red;">Skills </span>Now...</h1>
+    </div>
+  </section>
+  <!-- about-section-End -->
+  <!-- feature-section-start -->
+  <section id="feature" class="mt-5">
+    <div class="custom container-fluid">
+      <div class="row pt-5 ">
+        <div class="col-sm-12-col-md-6 col-lg-4 col-xl-4 col-12">
+          <div class="box">
+            <img class="img-fluid " src="./img/section-pic-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-sm-12-col-md-6 col-lg-4 col-xl-4 col-12">
+          <div class="content">
+            <h1 class="fw-bold">Have Fun</h1>
+            <p class="">Lorem ipsum, dolor elit. esse ut consectetur et repellendus ducimus. Reiciendis illum minima,
+              itaque amet suscipit blanditiis praesentium magni tempore architecto, provident debitis totam impedit sunt
+              tenetur!</p>
+            <p class="mb-1">Lorem ipsum dolor sit quibusdam quidem exercitationem assumenda. Necessitatibus, laboriosam
+              excepturi repellat omnis nisi expedita neque quas vitae alias consequuntur mollitia sint libero eum.
+              Alias, aperiam vitae.</p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+        <div class="col-sm-12-col-md-6 col-lg-4 col-xl-4 col-12">
+          <div class="box">
+            <img class="img-fluid " src="./img/section-pic-2.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12-col-md-6 col-lg-4 col-xl-4 col-12">
+          <div class="content">
+            <h1 class="fw-bold">Great Speaker's</h1>
+            <p class="">Lorem ipsum, dolor elit. esse ut consectetur et repellendus ducimus. Reiciendis illum minima,
+              itaque amet suscipit blanditiis praesentium magni tempore architecto, provident debitis totam impedit sunt
+              tenetur!</p>
+            <p class="mb-1">Lorem ipsum dolor sit quibusdam quidem exercitationem assumenda. Necessitatibus, laboriosam
+              excepturi repellat omnis nisi expedita neque quas vitae alias consequuntur mollitia sint libero eum.
+              Alias, aperiam vitae.</p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+        <div class="col-sm-12-col-md-6 col-lg-4 col-xl-4 col-12">
+          <div class="box">
+            <img class="img-fluid " src="./img/section-pic-3.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-sm-12-col-md-6 col-lg-4 col-xl-4 col-12">
+          <div class="content">
+            <h1 class="fw-bold">Great Knowledge</h1>
+            <p class="">Lorem ipsum, dolor elit. esse ut consectetur et repellendus ducimus. Reiciendis illum minima,
+              itaque amet suscipit blanditiis praesentium magni tempore architecto, provident debitis totam impedit sunt
+              tenetur!</p>
+            <p class="mb-1">Lorem ipsum dolor sit quibusdam quidem exercitationem assumenda. Necessitatibus, laboriosam
+              excepturi repellat omnis nisi expedita neque quas vitae alias consequuntur mollitia sint libero eum.
+              Alias, aperiam vitae.</p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="third-row-content lh-1 p-3">
+          <h1>Build Your Great <span>Personality</span></h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ex nostrum!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- feature-section-End -->
+  <!-- Joint-us-section-start -->
+  <section id="joint-us" class="conference-section">
+    <div class="confernce-img">
+      <img class="img-fluid" src="./img/conferece.jpg" alt="">
+    </div>
+    <div class="overlay"></div>
+    <div class="conference-section content">
+      <h6>Conference Start On</h1>
+        <p>21st-Jan-2023</p>
+    </div>
+  </section>
+  <section style="margin-bottom: 200px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6 col-12">
+          <div class="box">
+            <img class="img-fluid" style="height: 70vh; width: 100%; object-fit: cover;" src="./img/joint.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-6 col-xl-6 col-12">
+          <div class="joint-content">
+            <h3 style="color: red;" class="fw-bold">Joint Now!</h6>
+              <h3 class="fw-bold mb-3">We Create And Turn Into Reality..</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sit maiores quam officia inventore
+                  autem deleniti consequatur aspernatur cumque! Velit blanditiis nulla accusantium illum ipsam dicta
+                  eaque, maiores saepe, tempora neque laborum perferendis, amet voluptates voluptate quae nobis in
+                  ducimus explicabo voluptas commodi. Est saepe beatae numquam natus! <br> <br> Lorem, ipsum dolor.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quia et fugit voluptate officia
+                  nesciunt inventore, id nulla perspiciatis assumenda veritatis omnis tempore in reiciendis nisi nemo at
+                  nobis quod veniam vel cumque? Voluptatem totam exercitationem deleniti veniam alias. Id labore minus
+                  excepturi ipsam perspiciatis velit ut laborum nesciunt nostrum quidem.</p>
+                <button class="bttn rounded-pill px-4 py-2 mt-2">Let's Join Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Joint-us-section-End -->
+  <!-- Our-team-section-Start -->
+  <section id="our-team" class="speakers">
+    <div class="container-fluid">
+      <div class="main-heading text-center lh-1 my-5">
+        <h3 style="color: red;">Listen to Our Speakers</h3>
+        <div class="display-3 fw-bold">Who's Speaking</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-12">
+          <div class="box">
+            <img class="img-fluid" src="./img/speaker (1).jpg" alt="...">
+            <div class="box-content text-center">
+              <div class="h1">Andrews</div>
+              <p class="">Founder&CEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-12">
+          <div class="box">
+            <img class="img-fluid" src="./img/speaker (2).jpg" alt="...">
+            <div class="box-content text-center">
+              <div class="h1">Andrews</div>
+              <p class="">Founder&CEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-12">
+          <div class="box">
+            <img class="img-fluid" src="./img/speaker (3).jpg" alt="...">
+            <div class="box-content text-center">
+              <div class="h1">Andrews</div>
+              <p class="">Founder&CEO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-12">
+          <div class="box">
+            <img class="img-fluid" src="./img/speaker (4).jpg" alt="...">
+            <div class="box-content text-center">
+              <div class="h1">Andrews</div>
+              <p class="">Founder&CEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-12">
+          <div class="box">
+            <img class="img-fluid" src="./img/speaker (5).jpg" alt="...">
+            <div class="box-content text-center">
+              <div class="h1">Andrews</div>
+              <p class="">Founder&CEO</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-12">
+          <div class="box">
+            <img class="img-fluid" src="./img/speaker (6).jpg" alt="...">
+            <div class="box-content text-center">
+              <div class="h1">Andrews</div>
+              <p class="">Founder&CEO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Our-team-section-End -->
+  <!-- news-section-Start -->
+  <section id="news" class="News-section">
+    <div class="container">
+      <div class="main-heading text-center lh-1 my-5">
+        <h3 style="color: red;">News Update</h3>
+        <div class="display-3 fw-bold">Our Latest News</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-12 mt-5">
+          <div class="card" style="box-shadow: 1px 5px 4px 8px #888888;">
+            <img src="./img/news (1).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title h3 fw-bold">How To Make A Complete Website.</h5>
+              <p class="card-text">Some quick example text to Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="fs-4 text-danger">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-12 mt-5">
+          <div class="card" style="box-shadow: 1px 5px 4px 8px #888888; margin-top:25px;">
+            <img src="./img/news (3).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title h3 fw-bold">How To Make A Complete Website.</h5>
+              <p class="card-text">Some quick example text to Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="fs-4 text-danger">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8 col-lg-4 col-xl-4 col-12 mt-5">
+          <div class="card" style="box-shadow: 1px 5px 4px 8px #888888;">
+            <img src="./img/news (2).jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title h3 fw-bold">How To Make A Complete Website.</h5>
+              <p class="card-text">Some quick example text to Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="fs-4 text-danger">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center mt-5">
+      <div class="third-row-content lh-1 p-3">
+        <h1>Enter your Email For <span>Latest News!</span></h1>
+        <label class="fs-4" for="Email"> Email:</label><input class="rounded fs-5" type="Email"><button
+          class=" bttn mx-2 rounded-pill">Submit</button>
+        <p class="mt-3 fs-4" style="color: red;">Stay Conneted With Us!</p>
+      </div>
+    </div>
+  </section>
+  <!-- news-section-End -->
+  <!-- footer-section-Start -->
+  <footer id="footer" class="footer-section">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="cta-text">
+                <h4>Find us</h4>
+                <span>1010 Avenue, sw 54321, chandigarh</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-phone"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>9876543210 0</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="far fa-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>mail@info.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row text-center">
+          <div class="footer-social-icon text-cemter">
+            <span class="h3 fw-bold">Follow us</span>
+            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2023, Developed By <a href="#">SAAD SHAIKH</a></p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+            <div class="footer-menu">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-section-End -->
+  <script>
+const navbar = document.querySelector('.nav-fixed');
+window.onscroll = () => {
+    if (window.scrollY > 300) {
+        navbar.classList.add('nav-active');
+    } else {
+        navbar.classList.remove('nav-active');
+    }
+};
+
+  </script>
+</body>
+
+</html>

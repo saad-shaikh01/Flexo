@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Prosto+One&family=Sevillana&family=Seymour+One&display=swap');
+* {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  scroll-behavior: smooth;
+}
+header.nav-fixed {
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+}
+.nav-active {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  padding: 0px ;
+  margin: 0px;
+}
+.nav-active ul .nav-item .nav-link {
+  color: black ;
+}
+.nav-active ul li a:hover{
+  color: red !important;
+}
+/* Global--Variables */
+.bttn {
+    color: aliceblue;
+    font-weight: 500;
+    padding: 0.2rem 0.7rem;
+    background-color: black;
+    border: 2px solid aliceblue;
+    transition: all 1s;
+}
+
+.bttn:hover {
+    color: black;
+    background-color: aliceblue;
+    border: 4px solid black;
+}
+
+nav ul li {
+    padding: 0.5rem;
+}
+
+nav ul .nav-item .nav-link {
+    color: white;
+}
+
+nav ul li a:active,
+nav ul li a:hover {
+    color: red !important;
+}
+.login-form input{
+  margin-top: 0.5rem;
+  margin-bottom: rem;
+  padding: 0.5rem 1rem;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+.login-form label {
+   margin-top: 1rem;
+}
+.login-form input::placeholder{
+  color: aliceblue;
+}
+
+ .carousel-png {
+    background-image: url(../img/Text-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;       
+    position: relative;
+}
+.text{
+    position: absolute;
+    bottom: 0.1rem; 
+    left: 30%;
+}
+.custom .box{
+    overflow: hidden; 
+} 
+.custom img{
+    width: 100vw !important;
+}
+.custom img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.third-row-content{
+    background-color: black;
+    margin-bottom: 200px;
+    color: aliceblue;
+}
+.third-row-content h1{
+    font-size: 50px;
+}
+.third-row-content h1 span{
+    font-size: 50px;
+    color: red;
+    text-decoration: underline;
+}
+.conference-section{
+    position: relative;
+    margin-bottom: 200px;
+}
+.confernce-img img{
+  height: 60vh;
+  width: 100%;
+  object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.4;
+}
+.conference-section .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+}
+.conference-section .content h6{
+    font-size: 40px;
+    font-weight: 600;
+}
+.conference-section .content p{
+    font-size: 30px;
+    font-weight: 600;
+}
+.speakers{
+    margin-bottom: 200px;
+}
+.speakers .box{
+    overflow: hidden;
+    position: relative;
+}
+.speakers img{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+.speakers .box:hover img{
+    transform: scale(1.1);
+}
+.speakers .box .box-content{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    padding: 0px 20px;
+    opacity: 0;
+}
+.speakers .box:hover .box-content{
+    opacity: 1;
+}
+.News-section .card:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: red;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: blocK;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: red;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: red;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
